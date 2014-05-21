@@ -44,10 +44,25 @@ body {
   list-style-type: none;
 }
 
+
+#pos-list {
+  font-size: 8em;
+}
+
+#pos-list li {
+  list-style-type: none;
+}
+
 a {
   text-decoration: none;
   font-size: inherit;
   color: #000000;
+}
+
+a:hover {
+  background-color: #fcea9c;
+  color: #000000;
+  font-weight: 700;
 }
 
 #player-list {

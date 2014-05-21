@@ -17,9 +17,16 @@
     <div class="main">
 
       <ul id="team-list">
-        <li><h3>Teams</h3></li>
+        <li><h3>Players By Team</h3></li>
         <% @teams.each do |team| %>
           <li><a href="<%= url("/#{team}") %>"><%= team %></a></li>
+        <% end %>
+      </ul>
+
+      <ul id="pos-list">
+        <li><h3>Players By Position</h3></li>
+        <% @positions.each do |position| %>
+          <li><a href="<%= url("pos/#{position}") %>"><%= position %>s</a></li>
         <% end %>
       </ul>
     </div>
