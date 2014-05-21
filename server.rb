@@ -4,7 +4,7 @@ require 'sinatra'
 require 'csv'
 require 'uri'
 
-def get_names
+def get_rosters
 
   team_array = []
 
@@ -18,7 +18,7 @@ end
 
 get '/' do
 
-  team_array = get_names
+  team_array = get_rosters
 
   team_names = []
 
@@ -37,12 +37,24 @@ end
 
 get '/:team' do
 
-  @teams = get_names
+  @teams = get_rosters
 
   @teams = @teams.find_all do |t|
     t[:team] == params[:team]
   end
 
   erb :show
+
+end
+
+get '/pos/:position' do
+
+  @teams = get_rosters
+
+  @teams = @teams.find_all do |t|
+    t[:position] == params[:position]
+  end
+
+  erb :'pos/show'
 
 end
