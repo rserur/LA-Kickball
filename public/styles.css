@@ -1,0 +1,25 @@
+* {
+  font-family: 'Roboto', Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Graduate', 'Impact', sans-serif;
+}
+
+.main {
+
+}
+
+#team-list li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 5%;
+}
+
+.player-name {
+
+}
+
+.player-position {
+
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LACKP: League of Cool Kickball Professionals</title>
+    <link href='http://fonts.googleapis.com/css?family=Graduate|Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+
+    <div class="main">
+      <header>
+      <h1>LACKP</h1>
+      <h2>Leauge of Cool Kickball Professionals</h2>
+      </header>
+
+      <ul id="team-list">
+        <li>Teams:</li>
+        <% @teams.each do |team| %>
+          <li><a href="<%= url("/#{team}") %>"><%= team %></a></li>
+        <% end %>
+      </ul>
+    </div>
+
+  </body>
+</html>
