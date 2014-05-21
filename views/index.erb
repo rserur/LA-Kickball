@@ -8,14 +8,16 @@
 
   <body>
 
-    <div class="main">
-      <header>
+
+    <header>
       <h1>LACKP</h1>
-      <h2>Leauge of Cool Kickball Professionals</h2>
-      </header>
+      <h2>League of Cool Kickball Professionals</h2>
+    </header>
+
+    <div class="main">
 
       <ul id="team-list">
-        <li>Teams:</li>
+        <li><h3>Teams</h3></li>
         <% @teams.each do |team| %>
           <li><a href="<%= url("/#{team}") %>"><%= team %></a></li>
         <% end %>

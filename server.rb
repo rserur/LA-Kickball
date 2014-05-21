@@ -1,3 +1,5 @@
+# pair-programmed w/Zak A.
+
 require 'sinatra'
 require 'csv'
 require 'uri'
@@ -25,7 +27,7 @@ get '/' do
   erb :index
 end
 
-get '/:zak' do
+get '/:team' do
 
   team_array = []
 
@@ -36,7 +38,7 @@ get '/:zak' do
   @teams = team_array
 
   @teams = @teams.find_all do |t|
-    t[:team] == params[:zak]
+    t[:team] == params[:team]
   end
 
   erb :show

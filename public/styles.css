@@ -1,25 +1,64 @@
 * {
   font-family: 'Roboto', Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2 {
+h1 {
   font-family: 'Graduate', 'Impact', sans-serif;
+  font-size: 14em;
+}
+
+h2 {
+  font-family: 'Graduate', 'Impact', sans-serif;
+  font-size: 6em;
+}
+
+h3 {
+ font-size: inherit;
+ border-top: 1px #000000 solid;
+ border-bottom: 2px #000000 solid;
+ margin: 2.5% 0;
+}
+
+header {
+  margin-bottom: 2.5%;
+}
+
+body {
+  width: 90%;
+  margin-left:5%;
+  margin-top:5%;
 }
 
 .main {
+  font-size: 1em;
+}
 
+#team-list {
+  font-size: 8em;
 }
 
 #team-list li {
-  display: inline;
   list-style-type: none;
-  padding-right: 5%;
+}
+
+a {
+  text-decoration: none;
+  font-size: inherit;
+  color: #000000;
+}
+
+#player-list {
+  font-size: 8em;
+  list-style-type: none;
 }
 
 .player-name {
-
+  font-weight: bold;
 }
 
-.player-position {
+.player-pos {
 
 }
